@@ -174,10 +174,27 @@ textarea.form-control {
 
 /* Hero section minimum height */
 .hero {
-    position: relative;
-    min-height: 100vh; /* Ensure hero section takes full height */
+    background-image: url('assets/imagenes/IMAGEN HERO.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative; /* Importante para que el pseudo-elemento se posicione correctamente */
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 123, 255, 0.3); /* Azul con 30% de opacidad */
+    z-index: -1; /* Coloca el filtro detrás del contenido */
 }
 
 /* Content adjustments */
