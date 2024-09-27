@@ -1,0 +1,391 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover entire section */
+}
+
+.hero-content {
+    position: relative;
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Adjust for correct centering */
+    color: white; /* Text color in hero */
+    text-align: center; /* Center text horizontally */
+}
+
+.fixed-top {
+    z-index: 1000; /* Ensure it's above the video */
+}
+
+.navbar {
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #007bff; /* Hover color for nav links */
+}
+
+.nav-link {
+    color: white; /* White for nav links */
+}
+
+.logo {
+    box-sizing: content-box;
+    height: 100px; /* Logo height */
+}
+
+.social {
+    box-sizing: content-box;
+    height: 20px; /* Adjust icon size */
+    margin: 0 15px; /* Spacing between icons */
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(149deg) brightness(103%) contrast(101%);
+}
+
+/* Ensure each section has the same height as hero */
+section {
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* About Us Mobile View */
+@media (max-width: 768px) {
+    #about .col-lg-6 {
+        order: 2; /* Change order for mobile */
+        text-align: center; /* Center text */
+    }
+    #about img {
+        order: 1; /* Ensure image is above on mobile */
+        margin-bottom: 20px; /* Bottom margin for image */
+    }
+}
+
+/* Button Hover Effect */
+.btn-primary:hover {
+    background-color: #0056b3; /* Background color on hover */
+    border-color: #004085; /* Border color on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Navbar mobile styles */
+@media (max-width: 768px) 
+{
+
+    #about {
+        height: auto !important;
+    }
+
+    .carousel-div {
+        width: 50% !important;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        background-image: url('https://thumbs.dreamstime.com/b/construction-site-sunset-7507349.jpg');
+    }
+
+    
+    .navbar-collapse {
+        text-align: center; /* Center text in nav on mobile */
+    }
+
+    .register-header {
+        display: none; /* Hide on mobile */
+    }
+
+    .hero-content {
+        margin-top: 100px;
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Spacing between nav items */
+    }
+}
+
+.navbar-blue {
+    background-color: #007bff !important; /* Bootstrap blue */
+    transition: background-color 0.5s ease; /* Smooth transition */
+}
+
+.top-header-black {
+    background-color: #ffc107 !important; /* Black */
+    transition: background-color 0.5s ease;
+}
+
+.navbar-light {
+    background-color: transparent !important; /* Initial transparent background */
+}
+
+/* Gold bar under text */
+.gold-bar {
+    height: 5px;
+    width: 50%;
+    background-color: #ffc107; /* Gold color */
+    margin: 10px 0 0 5%;
+}
+
+.gold-bar-secondary {
+    height: 4px;
+    width: 60%;
+    background-color: #ffc107; /* Gold color */
+    margin: 5px 0 0 2%;
+}
+
+/* Gold button styles */
+.btn-gold {
+    background-color: #ffc107;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 45px;
+}
+
+.btn-gold:hover {
+    background-color: #e0a800; /* Darker gold on hover */
+}
+
+/* Adjust form width on different screens */
+.card {
+    max-width: 100%;
+}
+
+/* Adjust textarea size */
+textarea.form-control {
+    resize: vertical; /* Allow vertical resize */
+}
+
+/* Hero section minimum height */
+.hero {
+    position: relative;
+    min-height: 100vh; /* Ensure hero section takes full height */
+    display: flex;
+    align-items: center;
+}
+
+/* Content adjustments */
+.hero-content {
+    max-width: 500px;
+}
+
+.custom-form .card {
+    height: 500px; /* Taller */
+    width: 80%; /* Slightly less wide */
+}
+
+.card-header-hero {
+    background-color: #007bff; /* Blue background */
+}
+
+.text-white {
+    color: white; /* White text */
+}
+
+.gold-separator {
+    border: 2px solid #daa520; /* Gold separator */
+    height: 0;
+    width: 100%;
+}
+
+.card-body {
+    background-color: white; /* White background for card body */
+}
+
+.custom-input {
+    background-color: #ccc; /* White for input fields */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 15px; /* Rounded corners */
+}
+
+.rectangular-card {
+    border-radius: 0.5rem; /* Rounded corners for rectangular look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around card */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.circle-indicator {
+    display: inline-block;
+    width: 10px; /* Width for circle indicator */
+    height: 10px; /* Height for circle indicator */
+    background-color: #ffc107; /* Gold color for circle */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Spacing to the right */
+}
+
+.background-image-section {
+    position: relative; /* Asegura que el ::before esté posicionado correctamente */
+    padding: 40px 0;
+    overflow: hidden; /* Evita que el ::before salga del contenedor */
+}
+
+.background-image-section::before {
+    content: "";
+    background: url("assets/imagenes/BACKGROUND BENEFITS.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.3); /* Aplica el filtro solo al fondo */
+    z-index: -1; /* Envía el fondo detrás del contenido */
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+    justify-content: center; /* Centra los elementos en la dirección horizontal */
+}
+
+.icon-container {
+    background-color: white; /* Fondo blanco para los íconos */
+    border-radius: 50%; /* Bordes redondeados */
+    padding: 30px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espacio entre el ícono y el texto */
+    margin-top: 20px;
+    display: flex; /* Centrar la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 140px; /* Ajusta el tamaño según necesites */
+    height: 140px; /* Ajusta el tamaño según necesites */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+
+}
+
+.icon-container img {
+    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    max-height: 100%; /* Asegura que la imagen no se salga del contenedor */
+}
+
+h3 {
+    margin-top: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.card-careers {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 0.5rem;
+    flex-grow: 1; /* Asegura que las tarjetas ocupen todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-careers {
+    width: 100%;
+    height: 300px; /* Ajusta la altura de la imagen según sea necesario */
+    object-fit: cover; /* Mantiene la proporción */
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+.card-body-hero {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+
+}
+
+#about {
+    height: 70vh;
+}
+
+body{
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;  
+}
+.main-body {
+    padding: 15px;
+}
+.card2 {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    max-width: 400px;
+    min-width: 190px;
+}
+
+#team {
+    background-color: #e2e8f0;    
+}
+
+.card-body2 {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+
+.carousel-div {
+    width: 650px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-image: url('https://thumbs.dreamstime.com/b/construction-site-sunset-7507349.jpg');
+}
+
