@@ -1,650 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programming Test</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-
-<!-- HEADER -->
-<header class="fixed-top">
-    <div class="top-header bg-primary d-none d-md-flex">
-        <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-4">
-            <div class="d-flex">
-                <img class="social" src="assets/imagenes/phone-call.png">
-                <a href="tel:+123456789" class="text-white ml-1">123456789</a>
-                <img class="social ml-3" src="assets/imagenes/mail.png">
-                <a href="" class="text-white ml-1">email@company.com</a>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Universidad</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="./styles.css">
+   </head>
+   <body>
+      <!-- HEADER -->
+      <header class="fixed-top">
+         <div class="top-header bg-primary d-none d-md-flex">
+            <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-4">
+               <div class="d-flex">
+                  <img class="social" src="assets/imagenes/phone-call.png">
+                  <a href="tel:+123456789" class="text-white ml-1">123456789</a>
+                  <img class="social ml-3" src="assets/imagenes/mail.png">
+                  <a href="" class="text-white ml-1">email@company.com</a>
+               </div>
+               <div class="d-flex">
+                  <a href="https://www.youtube.com" target="_blank">
+                  <img class="social ml-1" src="assets/imagenes/youtube.png" alt="Logo redes sociales" />
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank">
+                  <img class="social ml-1" src="assets/imagenes/instagram-logo.png" alt="Logo redes sociales" />
+                  </a>
+                  <a href="https://www.facebook.com" target="_blank">
+                  <img class="social ml-1" src="assets/imagenes/facebook-app-symbol.png"
+                     alt="Logo redes sociales" />
+                  </a>
+               </div>
             </div>
-            <div class="d-flex">
-                <a href="https://www.youtube.com" target="_blank">
-                    <img class="social ml-1" src="assets/imagenes/youtube.png" alt="Logo redes sociales"/>
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img class="social ml-1" src="assets/imagenes/instagram-logo.png" alt="Logo redes sociales"/>
-                </a>
-                
-                <a href="https://www.facebook.com" target="_blank">
-                    <img class="social ml-1" src="assets/imagenes/facebook-app-symbol.png" alt="Logo redes sociales"/>
-                </a>
-                
-               
-            </div>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 mx-auto">
-        <div class="container-fluid col-lg-10">
-            <a class="navbar-brand" href="#">
-                <img class="logo" src="assets/imagenes/LOGO.png" alt="Logo">
-            </a>
-            <button class="btn btn-outline-light rounded-pill d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
-    
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+         </div>
+         <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 mx-auto">
+            <div class="container-fluid col-lg-10">
+               <a class="navbar-brand" href="#">
+               <img class="logo" src="assets/imagenes/LOGO.png" alt="Logo">
+               </a>
+               <button class="btn btn-outline-light rounded-pill d-lg-none" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                  aria-label="Toggle navigation">Menu</button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
                         <a class="nav-link font-weight-bold" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
                         <a class="nav-link font-weight-bold" href="#study-careers">Courses</a>
-                    </li>
-                    <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
                         <a class="nav-link font-weight-bold" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
+                     </li>
+                     <li class="nav-item">
                         <a class="nav-link font-weight-bold" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
+                     </li>
+                  </ul>
+               </div>
             </div>
-        </div>
-    </nav>
-    
-</header>
-
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Columna de la izquierda: Texto y botón -->
-            <div class="col-md-6">
-                <div class="hero-content">
-                    <h3 class="text-white text-left ml-4 mt-4">Welcome at the university</h3>
-                    <div class="gold-bar"></div> <!-- Barra dorada -->
-                    <h1 class="text-white text-left ml-4 font-weight-bold">We are an online</h1>
-                    <h1 class="text-white text-left ml-4 font-weight-bold">platform to make learning</h1>
-                    <div class="d-flex justify-content-start">
-                        <button class="btn btn-gold mt-2">Get Now</button>
-                      </div>
-                      
-                </div>
-            </div>
-            
-            <!-- Columna de la derecha: Formulario de registro -->
-            <div class="col-md-6 mx-auto custom-form register-header">
-                <div class="card rounded-pill">
-                    <div class="card-header card-header-hero bg-primary text-white text-center">
-                        <h3>Register Now!</h3> <!-- Texto en blanco y fondo azul -->
-            
-                    </div>
-                    <div class="gold-separator"></div> <!-- Separador dorado -->
-                    <div class="card-body-hero bg-white">
+         </nav>
+      </header>
+      <!-- HERO SECTION -->
+      <section class="hero">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6">
+                  <div class="hero-content">
+                     <h3 class="text-white text-left ml-4 mt-4">Welcome at the university</h3>
+                     <div class="gold-bar"></div>
+                     <h1 class="text-white text-left ml-4 font-weight-bold">We are an online</h1>
+                     <h1 class="text-white text-left ml-4 font-weight-bold">platform to make learning</h1>
+                     <div class="d-flex justify-content-start">
+                        <button class="btn btn-gold mt-2 ml-4">Get Now</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 mx-auto custom-form register-header">
+                  <div class="card rounded-pill">
+                     <div class="card-header card-header-hero bg-primary text-white text-center">
+                        <h3>Register Now!</h3>
+                     </div>
+                     <div class="gold-separator"></div>
+                     <div class="card-body-hero bg-white">
                         <form>
-                            <!-- Campo Name -->
-                            <div class="form-group">
-                                <input type="text" class="form-control custom-input" id="name" placeholder="Enter your name" required>
-                            </div>
-            
-                            <!-- Campos Email y Phone en una línea -->
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control custom-input" id="email" placeholder="Enter your email" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="tel" class="form-control custom-input" id="phone" placeholder="Enter your phone" required>
-                                </div>
-                            </div>
-            
-                            <!-- Campo Subject -->
-                            <div class="form-group">
-                                <input type="text" class="form-control custom-input" id="subject" placeholder="Enter the subject" required>
-                            </div>
-            
-                            <!-- Campo Message (más grande) -->
-                            <div class="form-group">
-                                <textarea class="form-control custom-input" id="message" rows="4" placeholder="Enter your message" required></textarea>
-                            </div>
-            
-                            <!-- Botón pequeño dorado alineado a la izquierda -->
-                            <button type="submit" class="btn btn-gold btn">Send</button>
+                           <div class="form-group">
+                              <input type="text" class="form-control custom-input" id="name"
+                                 placeholder="Enter your name" required>
+                           </div>
+                           <div class="form-row">
+                              <div class="form-group col-md-6">
+                                 <input type="email" class="form-control custom-input" id="email"
+                                    placeholder="Enter your email" required>
+                              </div>
+                              <div class="form-group col-md-6">
+                                 <input type="tel" class="form-control custom-input" id="phone"
+                                    placeholder="Enter your phone" required>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <input type="text" class="form-control custom-input" id="subject"
+                                 placeholder="Enter the subject" required>
+                           </div>
+                           <div class="form-group">
+                              <textarea class="form-control custom-input" id="message" rows="4"
+                                 placeholder="Enter your message" required></textarea>
+                           </div>
+                           <button type="submit" class="btn btn-gold btn">Send</button>
                         </form>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            
-        </div>
-    </div>
-</section>
-
-
-<!-- MOST POPULAR SECTION -->
-<section id="most-popular" class="py-5">
-    <div class="container">
-        <div class="col-md-6 mt-4 py-5">
-            <div class="hero-content">
-                <div class="d-flex align-items-center">
-                    <span class="circle-indicator"></span>
-                    <h4 class="text-primary text-sm mb-0">The most popular</h4>
-                </div>
-                <div class="gold-bar-secondary"></div> <!-- Barra dorada -->
-                <div class="d-flex align-items-center ml-2">
-               
-                    <h3 class="text-primary ml-1 font-weight-bold">Know what we offer you</h3>
-                </div>
+         </div>
+      </section>
+      <section id="most-popular" class="py-5">
+         <div class="container">
+            <div class="col-md-6 pb-5">
+               <div class="hero-content">
+                  <div class="d-flex align-items-center">
+                     <span class="circle-indicator"></span>
+                     <h4 class="text-primary text-sm mb-0">The most popular</h4>
+                  </div>
+                  <div class="gold-bar-secondary"></div>
+                  <div class="d-flex align-items-center ml-2">
+                     <h3 class="text-primary ml-1 font-weight-bold">Know what we offer you</h3>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    
-    
-    <div class="container">
-        <div class="row">
-            <!-- Card 1 -->
-            <div class="col-lg-3 col-sm-6 mb-4 rounded">
-                <div class="card rectangular-card shadow-lg border-0">
-                    <img src="assets\imagenes\IMAGE CURSO 1.jpg" class="card-img-top w-100" alt="Team Member 1">
-                    <div class="gold-separator"></div>
-                    <div class="card-body text-center bg-white rounded">
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6 mb-4 rounded">
+                  <div class="card rectangular-card shadow-lg border-0">
+                     <img src="assets\imagenes\IMAGE CURSO 1.jpg" class="card-img-top w-100" alt="Team Member 1">
+                     <div class="gold-separator"></div>
+                     <div class="card-body text-center bg-white rounded">
                         <p class="text-primary">Contrary to popular belief, Lorem Ipsum is not simply</p>
                         <button class="btn btn-gold mt-3">Read More</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Card 2 -->
-            <div class="col-lg-3 col-sm-6 mb-4">
-                <div class="card rectangular-card shadow-lg border-0">
-                    <img src="assets\imagenes\IMAGE CURSO 2.jpg" class="card-img-top w-100" alt="Team Member 2">
-                    <div class="gold-separator"></div>
-                    <div class="card-body text-center bg-white rounded">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="card rectangular-card shadow-lg border-0">
+                     <img src="assets\imagenes\IMAGE CURSO 2.jpg" class="card-img-top w-100" alt="Team Member 2">
+                     <div class="gold-separator"></div>
+                     <div class="card-body text-center bg-white rounded">
                         <p class="text-primary">Lorem Ipsum is simply dummy text of the printing</p>
                         <button class="btn btn-gold mt-3">Read More</button>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Card 3 -->
-            <div class="col-lg-3 col-sm-6 mb-4">
-                <div class="card rectangular-card shadow-lg border-0">
-                    <img src="assets\imagenes\IMAGE CURSO 3.jpg" class="card-img-top w-100" alt="Team Member 3">
-                    <div class="gold-separator"></div>
-                    <div class="card-body text-center bg-white rounded">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="card rectangular-card shadow-lg border-0">
+                     <img src="assets\imagenes\IMAGE CURSO 3.jpg" class="card-img-top w-100" alt="Team Member 3">
+                     <div class="gold-separator"></div>
+                     <div class="card-body text-center bg-white rounded">
                         <p class="text-primary">Contrary to popular belief, Lorem Ipsum is not simply</p>
                         <button class="btn btn-gold mt-3">Read More</button>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Card 4 -->
-            <div class="col-lg-3 col-sm-6 mb-4">
-                <div class="card rectangular-card shadow-lg border-0">
-                    <img src="assets\imagenes\IMAGE CURSO 4.jpg" class="card-img-top w-100" alt="Team Member 4">
-                    <div class="gold-separator"></div>
-                    <div class="card-body text-center bg-white rounded">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="card rectangular-card shadow-lg border-0">
+                     <img src="assets\imagenes\IMAGE CURSO 4.jpg" class="card-img-top w-100" alt="Team Member 4">
+                     <div class="gold-separator"></div>
+                     <div class="card-body text-center bg-white rounded">
                         <h5 class="text-primary">Contrary to popular belief, Lorem Ipsum is not simply</h5>
                         <button class="btn btn-gold mt-3">Read More</button>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <div class="col text-center mt-4">
-        <button class="btn btn-white">View More</button>
-    </div>
-
-    
-</section>
-
-<!-- ABOUT US -->
-<section id="about" class="py-5 bg-primary">
-    <div class="container mt-5">
-        <div class="row align-items-center">
-            <!-- Columna izquierda: Texto -->
-            <div class="col-lg-6 col-md-12 mb-lg-0 mb-n3">
-                <div>
-                    <div class="d-flex align-items-center">
+         </div>
+         <div class="col text-center mt-4">
+            <button class="btn btn-white">View More</button>
+         </div>
+      </section>
+      <!-- ABOUT US -->
+      <section id="about" class="py-5 bg-primary">
+         <div class="container mt-5">
+            <div class="row align-items-center">
+               <div class="col-lg-6 col-md-12 mb-lg-0 mb-n3">
+                  <div>
+                     <div class="d-flex align-items-center">
                         <span class="circle-indicator"></span>
                         <h4 class="text-white text-sm mb-0">About Us</h4>
-                    </div>
-                    <div class="gold-bar-secondary"></div> <!-- Barra dorada -->
-                    <div class="d-flex align-items-center ml-2">
+                     </div>
+                     <div class="gold-bar-secondary"></div>
+                     <div class="d-flex align-items-center ml-2">
                         <h3 class="text-white ml-1 font-weight-bold">Know everything we do for you</h3>
-                    </div>
-                    <p class="text-white mt-3">
-                        The University Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
-                    </p>
-                </div>
+                     </div>
+                     <p class="text-white mt-3">
+                        The University Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12 text-center rounded-pill">
+                  <img class="img-fluid mt-4 py-4 rounded-pill" src="assets/imagenes/IMAGE ABOUT US.jpg"
+                     alt="About Us">
+               </div>
             </div>
-
-            <!-- Columna derecha: Imagen -->
-            <div class="col-lg-6 col-md-12 text-center rounded-pill">
-                <img class="img-fluid mt-4 py-4 rounded-pill" src="assets/imagenes/IMAGE ABOUT US.jpg" alt="About Us">
+            <div class="d-flex justify-content-sm-start justify-content-center mt-n3">
+               <button class="btn btn-gold">View More</button>
             </div>
-        </div>
-        
-        <!-- Botón al final en dispositivos móviles -->
-        <div class="d-flex justify-content-sm-start justify-content-center mt-n3">
-            <button class="btn btn-gold">View More</button>
-          </div>
-          
-    </div>
-</section>
-
-
-
-<section class="background-image-section d-flex justify-content-center align-items-center">
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-6 col-md-3 text-center mb-4">
-                <div class="d-flex justify-content-center">
-                    <div class="icon-container">
+         </div>
+      </section>
+      <section class="background-image-section d-flex justify-content-center align-items-center">
+         <div class="container mt-5 mb-5">
+            <div class="row">
+               <div class="col-6 col-md-3 text-center mb-4">
+                  <div class="d-flex justify-content-center">
+                     <div class="icon-container">
                         <img src="assets/imagenes/ICONO 1.png" alt="">
-                    </div>
-                </div>
-                <h5 class="text-white">Excellent Content</h5>
-            </div>
-
-            <div class="col-6 col-md-3 text-center mb-4">
-                <div class="d-flex justify-content-center">
-                    <div class="icon-container">
+                     </div>
+                  </div>
+                  <h5 class="text-white">Excellent Content</h5>
+               </div>
+               <div class="col-6 col-md-3 text-center mb-4">
+                  <div class="d-flex justify-content-center">
+                     <div class="icon-container">
                         <img src="assets/imagenes/ICONO 2.png" alt="">
-                    </div>
-                </div>
-                <h5 class="text-white">Expert Instructors</h5>
-            </div>
-
-            <div class="col-6 col-md-3 text-center mb-4">
-                <div class="d-flex justify-content-center">
-                    <div class="icon-container">
+                     </div>
+                  </div>
+                  <h5 class="text-white">Expert Instructors</h5>
+               </div>
+               <div class="col-6 col-md-3 text-center mb-4">
+                  <div class="d-flex justify-content-center">
+                     <div class="icon-container">
                         <img src="assets/imagenes/ICONO 3.png" alt="">
-                    </div>
-                </div>
-                <h5 class="text-white">The Best Professionals</h5>
-            </div>
-
-            <div class="col-6 col-md-3 text-center mb-4">
-                <div class="d-flex justify-content-center">
-                    <div class="icon-container">
+                     </div>
+                  </div>
+                  <h5 class="text-white">The Best Professionals</h5>
+               </div>
+               <div class="col-6 col-md-3 text-center mb-4">
+                  <div class="d-flex justify-content-center">
+                     <div class="icon-container">
                         <img src="assets/imagenes/ICONO 4.png" alt="">
-                    </div>
-                </div>
-                <h5 class="text-white">Countless courses</h5>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-<!-- STUDY CAREERS -->
-<section id="study-careers" class="py-5">
-    <div class="container">
-        <div class="col-md-6 mt-4">
-            <div class="hero-content">
-                <div class="d-flex align-items-center">
-                    <span class="circle-indicator"></span>
-                    <h4 class="text-primary text-sm mb-0">Study careers</h4>
-                </div>
-                <div class="gold-bar-secondary"></div> <!-- Barra dorada -->
-                <div class="d-flex align-items-center ml-2">
-               
-                    <h4 class="text-primary ml-1 font-weight-bold">Explore the different careers we offer</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mt-5">
-        <div class="row">
-            <!-- Columna izquierda -->
-            <div class="col-lg-6">
-                <div class="row">
-                    <!-- Primer fila con dos tarjetas -->
-                    <div class="col-12 col-md-6 mb-3">
-                        <div class="card-careers">
-                            <img src="assets/imagenes/IMAGE  CATEGORY ADMINISTRATION.jpg" class="card-img-top" alt="Imagen de fondo">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Administration</h5>
-                                <button class="btn btn-gold">View More</button>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="col-12 col-md-6 mb-3">
-                        <div class="card-careers">
-                            <img src="assets/imagenes/IMAGE  CATEGORY ACCOUNTING.jpg" class="card-img-top" alt="Imagen de fondo">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Accounting</h5>
-                                <button class="btn btn-gold">View More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Segunda fila con una tarjeta -->
-                <div class="row mt-3">
-                    <div class="col-12 mb-3">
-                        <div class="card-careers">
-                            <img src="assets/imagenes/IMAGE  CATEGORY ARCHITECTURE.jpg" class="card-img-top" alt="Imagen de fondo">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Architecture</h5>
-                                <button class="btn btn-gold">View More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Columna derecha -->
-            <div class="col-lg-6">
-                <div class="row">
-                    <!-- Primer tarjeta de la columna derecha -->
-                    <div class="col-12 mb-3">
-                        <div class="card-careers">
-                            <img src="assets/imagenes/IMAGE  CATEGORY MATHEMATICS.jpg" class="card-img-top" alt="Imagen de fondo">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Mathematics</h5>
-                                <button class="btn btn-gold">View More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="row mt-3">
-                    <!-- Segunda tarjeta de la columna derecha -->
-                    <div class="col-12 mb-3">
-                        <div class="card-careers">
-                            <img src="assets/imagenes/IMAGE  CATEGORY PROGRAMMING.jpg" class="card-img-top" alt="Imagen de fondo">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Programming</h5>
-                                <button class="btn btn-gold">View More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-<div class="text-center mt-4 "> <!-- Mostrar solo en móviles -->
-    <button class="btn btn-white">View More</button>
-</div>
-
-</div>
-
-    
-
-</section>
-
-<section id="team" class="py-5">
-    <div class="container">
-        <div class="col-md-6 mt-4">
-            <div class="hero-content">
-                <div class="d-flex align-items-center">
-                    <span class="circle-indicator"></span>
-                    <h4 class="text-primary text-sm mb-0">Our Team</h4>
-                </div>
-                <div class="gold-bar-secondary"></div> <!-- Barra dorada -->
-                <div class="d-flex align-items-center ml-2">
-               
-                    <h4 class="text-primary ml-1 font-weight-bold">Meet the best professionals</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container justify-content-center">
-        <div class="row gutters-sm justify-content-center mx-2">
-          <!-- Primera tarjeta -->
-          <div class="col-md-2 col-sm-6 mb-3 mx-4">
-            <div class="card2">
-              <div class="card-body2">
-                <div class="d-flex flex-column align-items-center text-center">
-                  <img src="assets\imagenes\IMAGE TEAM 1.jpg" alt="Admin" class="rounded-circle" width="150">
-                  <div class="mt-3">
-                    <h4>Jhon Smith</h4>
-                    <p class="text-secondary mb-1">Full Stack Developer</p>
-                    <div class="text-center mt-4 d-md-none"> <!-- Mostrar solo en móviles -->
-                      <button class="btn btn-gold">View More</button>
-                    </div>
+                     </div>
                   </div>
-                </div>
-              </div>
+                  <h5 class="text-white">Countless courses</h5>
+               </div>
             </div>
-          </div>
-            <!-- Tarjeta 2 -->
-            <div class="col-md-2 col-sm-6 mb-3 mx-4">
-                <div class="card2">
-                  <div class="card-body2">
-                    <div class="d-flex flex-column align-items-center text-center">
-                      <img src="assets\imagenes\IMAGE TEAM 2.jpg" alt="Admin" class="rounded-circle" width="150">
-                      <div class="mt-3">
-                        <h4>Da Morgan</h4>
-                        <p class="text-secondary mb-1">Full Stack Developer</p>
-                        <div class="text-center mt-4 d-md-none"> <!-- Mostrar solo en móviles -->
-                          <button class="btn btn-gold">View More</button>
-                        </div>
-                      </div>
-                    </div>
+         </div>
+      </section>
+      <!-- STUDY CAREERS -->
+      <section id="study-careers" class="py-5">
+         <div class="container">
+            <div class="col-md-6 mt-4">
+               <div class="hero-content">
+                  <div class="d-flex align-items-center">
+                     <span class="circle-indicator"></span>
+                     <h4 class="text-primary text-sm mb-0">Study careers</h4>
                   </div>
-                </div>
-              </div>
-            <!-- Tarjeta 3 -->
-            <div class="col-md-2 col-sm-6 mb-3 mx-4">
-                <div class="card2">
-                  <div class="card-body2">
-                    <div class="d-flex flex-column align-items-center text-center">
-                      <img src="assets\imagenes\IMAGE TEAM 3.jpg" alt="Admin" class="rounded-circle" width="150">
-                      <div class="mt-3">
-                        <h4>Zara Smith</h4>
-                        <p class="text-secondary mb-1">Full Stack Developer</p>
-                        <div class="text-center mt-4 d-md-none"> <!-- Mostrar solo en móviles -->
-                          <button class="btn btn-gold">View More</button>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="gold-bar-secondary"></div>
+                  <div class="d-flex align-items-center ml-2">
+                     <h4 class="text-primary ml-1 font-weight-bold">Explore the different careers we offer</h4>
                   </div>
-                </div>
-              </div>
-            <!-- Tarjeta 4 -->
-            <div class="col-md-2 col-sm-6 mb-3 mx-4">
-                <div class="card2">
-                  <div class="card-body2">
-                    <div class="d-flex flex-column align-items-center text-center">
-                      <img src="assets\imagenes\IMAGE TEAM 4.jpg" alt="Admin" class="rounded-circle" width="150">
-                      <div class="mt-3">
-                        <h4>Jimena Soto</h4>
-                        <p class="text-secondary mb-1">Full Stack Developer</p>
-                        <div class="text-center mt-4 d-md-none"> <!-- Mostrar solo en móviles -->
-                          <button class="btn btn-gold">View More</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      </div>
-      
-
-
-
-<div class="text-center mt-4 "> <!-- Mostrar solo en móviles -->
-    <button class="btn btn-gold">View More</button>
-</div>
-
-</div>
-
-
-    
-
-</section>
-
-<section>
-    <div class="carousel-div d-flex justify-content-center align-items-center px-5 py-5 mb-5">
-        <!-- Contenedor del texto y el carrusel -->
-        <div class="row w-100">
-            <!-- Columna del texto -->
-            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0">
-                <h3 class="text-left text-white font-weight-bold">LOREM IPSUM DOLOR SIT AME.</h3>
+               </div>
             </div>
-            <!-- Columna del carrusel -->
-            <div class="col-12 col-md-8 px-0 px-md-5">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
+         </div>
+         <div class="container mt-5">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="row">
+                     <div class="col-12 col-md-6 mb-3">
+                        <div class="card-careers">
+                           <img src="assets/imagenes/IMAGE  CATEGORY ADMINISTRATION.jpg" class="card-img-top"
+                              alt="Imagen de fondo">
+                           <div class="card-body text-center">
+                              <h5 class="card-title">Administration</h5>
+                              <button class="btn btn-gold">View</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 mb-3">
+                        <div class="card-careers">
+                           <img src="assets/imagenes/IMAGE  CATEGORY ACCOUNTING.jpg" class="card-img-top"
+                              alt="Imagen de fondo">
+                           <div class="card-body text-center">
+                              <h5 class="card-title">Accounting</h5>
+                              <button class="btn btn-gold">View</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row mt-3">
+                     <div class="col-12 mb-3">
+                        <div class="card-careers">
+                           <img src="assets/imagenes/IMAGE  CATEGORY ARCHITECTURE.jpg" class="card-img-top"
+                              alt="Imagen de fondo">
+                           <div class="card-body text-center">
+                              <h5 class="card-title">Architecture</h5>
+                              <button class="btn btn-gold">View</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="row">
+                     <div class="col-12 mb-3">
+                        <div class="card-careers">
+                           <img src="assets/imagenes/IMAGE  CATEGORY MATHEMATICS.jpg" class="card-img-top"
+                              alt="Imagen de fondo">
+                           <div class="card-body text-center">
+                              <h5 class="card-title">Mathematics</h5>
+                              <button class="btn btn-gold">View</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row mt-3">
+                     <div class="col-12 mb-3">
+                        <div class="card-careers">
+                           <img src="assets/imagenes/IMAGE  CATEGORY PROGRAMMING.jpg" class="card-img-top"
+                              alt="Imagen de fondo">
+                           <div class="card-body text-center">
+                              <h5 class="card-title">Programming</h5>
+                              <button class="btn btn-gold">View</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="text-center mt-4 ">
+            <button class="btn btn-white">View More</button>
+         </div>
+         </div>
+      </section>
+      <!-- TEAM -->
+      <section id="team" class="py-1">
+         <div class="container">
+            <div class="col-md-6 mt-4">
+               <div class="hero-content">
+                  <div class="d-flex align-items-center">
+                     <span class="circle-indicator"></span>
+                     <h4 class="text-primary text-sm mb-0">Our Team</h4>
+                  </div>
+                  <div class="gold-bar-secondary"></div>
+                  <div class="d-flex align-items-center ml-2 py-2">
+                     <h4 class="text-primary ml-1 font-weight-bold">Meet the best professionals</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container justify-content-center">
+            <div class="row gutters-sm justify-content-center mx-2">
+               <div class="col-md-2 col-sm-6 mb-3 mx-4">
+                  <div class="card2">
+                     <div class="card-body2">
+                        <div class="d-flex flex-column align-items-center text-center">
+                           <img src="assets\imagenes\IMAGE TEAM 1.jpg" alt="Admin" class="rounded-circle"
+                              width="150">
+                           <div class="mt-3">
+                              <h4>Jhon Smith</h4>
+                              <p class="text-secondary mb-1">Full Stack Developer</p>
+                              <div class="text-center mt-4 d-md-none">
+                                 <button class="btn btn-gold">View</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-2 col-sm-6 mb-3 mx-4">
+                  <div class="card2">
+                     <div class="card-body2">
+                        <div class="d-flex flex-column align-items-center text-center">
+                           <img src="assets\imagenes\IMAGE TEAM 2.jpg" alt="Admin" class="rounded-circle"
+                              width="150">
+                           <div class="mt-3">
+                              <h4>Da Morgan</h4>
+                              <p class="text-secondary mb-1">Full Stack Developer</p>
+                              <div class="text-center mt-4 d-md-none">
+                                 <button class="btn btn-gold">View</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tarjeta 3 -->
+               <div class="col-md-2 col-sm-6 mb-3 mx-4">
+                  <div class="card2">
+                     <div class="card-body2">
+                        <div class="d-flex flex-column align-items-center text-center">
+                           <img src="assets\imagenes\IMAGE TEAM 3.jpg" alt="Admin" class="rounded-circle"
+                              width="150">
+                           <div class="mt-3">
+                              <h4>Zara Smith</h4>
+                              <p class="text-secondary mb-1">Full Stack Developer</p>
+                              <div class="text-center mt-4 d-md-none">
+                                 <button class="btn btn-gold">View</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tarjeta 4 -->
+               <div class="col-md-2 col-sm-6 mb-3 mx-4">
+                  <div class="card2">
+                     <div class="card-body2">
+                        <div class="d-flex flex-column align-items-center text-center">
+                           <img src="assets\imagenes\IMAGE TEAM 4.jpg" alt="Admin" class="rounded-circle"
+                              width="150">
+                           <div class="mt-3">
+                              <h4>Jimena Soto</h4>
+                              <p class="text-secondary mb-1">Full Stack Developer</p>
+                              <div class="text-center mt-4 d-md-none">
+                                 <button class="btn btn-gold">View</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="text-center my-4 py-4">
+               <button class="btn btn-gold">View More</button>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="carousel-div d-flex justify-content-center align-items-center px-5 py-5 mb-5">
+            <div class="row w-100">
+               <div class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+                  <h3 class="text-left text-white font-weight-bold">LOREM IPSUM DOLOR SIT AME.</h3>
+               </div>
+               <div class="col-12 col-md-8 px-0 px-md-5">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
+                     </ol>
+                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100 c-imgs" src="assets/imagenes/person_1.jpg" alt="First slide">
+                           <img class="d-block w-100 c-imgs" src="assets/imagenes/person_1.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 c-imgs" src="assets/imagenes/person_2.jpg" alt="Second slide">
+                           <img class="d-block w-100 c-imgs" src="assets/imagenes/person_2.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 c-imgs" src="assets/imagenes/person_3.jpg" alt="Third slide">
+                           <img class="d-block w-100 c-imgs" src="assets/imagenes/person_3.jpg" alt="Third slide">
                         </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                        data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                        data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- FOOTER -->
- <section id="contact" class="bg-primary p-5">
-<footer class="py-4">
-    <div class="container mb-5">
-        <div class="row">
-            <!-- Logo -->
-            <div class="col-12 col-md-3 mt-3 text-center text-md-left">
-                <img class="logo img-fluid" src="assets/imagenes/LOGO.png" alt="">
+         </div>
+      </section>
+      <!-- FOOTER -->
+      <section id="contact" class="bg-primary p-5">
+         <footer class="py-4">
+            <div class="container mb-5">
+               <div class="row">
+                  <div class="col-12 col-md-3 mt-3 text-center text-md-left">
+                     <img class="logo img-fluid" src="assets/imagenes/LOGO.png" alt="">
+                  </div>
+                  <div class="col-12 col-md-3 mt-3">
+                     <h5 class="font-weight-bold text-danger">Quick Links</h5>
+                     <div class="mb-2"><a href="" class="text-white">About Us</a></div>
+                     <div class="mb-2"><a href="" class="text-white">Courses</a></div>
+                     <div class="mb-2"><a href="" class="text-white">Team</a></div>
+                     <div class="mb-2"><a href="" class="text-white">Contact Us</a></div>
+                  </div>
+                  <div class="col-12 col-md-3 mt-3">
+                     <h5 class="font-weight-bold text-danger">Contact Info</h5>
+                     <div class="mb-2 d-flex align-items-center">
+                        <img class="social" src="assets/imagenes/phone-call.png" alt="Phone Icon">
+                        <a href="tel:+123456789" class="text-white ml-2">123456789</a>
+                     </div>
+                     <div class="mb-2 d-flex align-items-center">
+                        <img class="social" src="assets/imagenes/mail.png" alt="Mail Icon">
+                        <a href="mailto:mail@enterprise.com" class="text-white ml-2">mail@enterprise.com</a>
+                     </div>
+                     <div class="mb-2 d-flex align-items-center">
+                        <img class="social" src="assets/imagenes/location.png" alt="Location Icon">
+                        <span class="text-white ml-2">24th Street</span>
+                     </div>
+                     <div class="mb-2 d-flex justify-content-center justify-content-md-start ml-lg-2">
+                        <a href="https://www.youtube.com" target="_blank">
+                        <img class="social ml-2" src="assets/imagenes/youtube.png" alt="YouTube Logo" />
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                        <img class="social ml-2" src="assets/imagenes/instagram-logo.png"
+                           alt="Instagram Logo" />
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank">
+                        <img class="social ml-2" src="assets/imagenes/facebook-app-symbol.png"
+                           alt="Facebook Logo" />
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-3 mt-3">
+                     <h5 class="font-weight-bold text-danger">Newsletter</h5>
+                     <p class="text-white">Receive all our promotions</p>
+                     <div class="input-group">
+                        <input type="email" class="form-control rounded-input" placeholder="" aria-label="Correo">
+                        <div class="input-group-append">
+                           <button class="btn btn-primary rounded-button" type="button">Subscribe</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-    
-            <!-- Quick Links -->
-            <div class="col-12 col-md-3 mt-3">
-                <h5 class="font-weight-bold text-danger">Quick Links</h5>
-                <div class="mb-2"><a href="" class="text-white">About Us</a></div>
-                <div class="mb-2"><a href="" class="text-white">Courses</a></div>
-                <div class="mb-2"><a href="" class="text-white">Team</a></div>
-                <div class="mb-2"><a href="" class="text-white">Contact Us</a></div>
+            <div class="container text-center mt-5">
+               <p class="text-white font-weight-bold">&copy; Created by Alejandro Diaz. 2024</p>
             </div>
-    
-            <!-- Contact Info -->
-            <div class="col-12 col-md-3 mt-3">
-                <h5 class="font-weight-bold text-danger">Contact Info</h5>
-                <div class="mb-2 d-flex align-items-center">
-                    <img class="social" src="assets/imagenes/phone-call.png" alt="Phone Icon">
-                    <a href="tel:+123456789" class="text-white ml-2">123456789</a>
-                </div>
-                <div class="mb-2 d-flex align-items-center">
-                    <img class="social" src="assets/imagenes/mail.png" alt="Mail Icon">
-                    <a href="mailto:mail@enterprise.com" class="text-white ml-2">mail@enterprise.com</a>
-                </div>
-                <div class="mb-2 d-flex align-items-center">
-                    <img class="social" src="assets/imagenes/location.png" alt="Location Icon">
-                    <span class="text-white ml-2">24th Street</span>
-                </div>
-                <div class="mb-2 d-flex justify-content-center justify-content-md-start ml-lg-2">
-                    <a href="https://www.youtube.com" target="_blank">
-                        <img class="social ml-2" src="assets/imagenes/youtube.png" alt="YouTube Logo"/>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank">
-                        <img class="social ml-2" src="assets/imagenes/instagram-logo.png" alt="Instagram Logo"/>
-                    </a>
-                    <a href="https://www.facebook.com" target="_blank">
-                        <img class="social ml-2" src="assets/imagenes/facebook-app-symbol.png" alt="Facebook Logo"/>
-                    </a>
-                </div>
-            </div>
-    
-            <!-- Newsletter -->
-            <div class="col-12 col-md-3 mt-3">
-                <h5 class="font-weight-bold text-danger">Newsletter</h5>
-                <p class="text-white">Receive all our promotions</p>
-                <div class="input-group">
-                    <input type="email" class="form-control rounded-input" placeholder="" aria-label="Correo">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary rounded-button" type="button">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <div class="container text-center mt-5">
-        <p class="text-white font-weight-bold">&copy; Created by Alejandro Diaz. 2024</p>
-    </div>
-</footer>
-</section>
-
-<!-- Bootstrap JS and dependencies -->
-<script>
-    function updateNavbar() {
-        var navbar = document.querySelector(".navbar");
-        var topHeader = document.querySelector(".top-header");
-        var heroSection = document.querySelector(".hero");
-        var heroHeight = heroSection.offsetHeight;
-        var scrollPosition = window.scrollY;
-
-        // Verifica si el viewport es menor que 768px
-        var isMobile = window.innerWidth < 768;
-
-        // Calculamos el 70% de la altura del hero
-        var triggerHeight = heroHeight * 0.10;
-
-        if (isMobile) {
-            navbar.classList.remove("navbar-light");
-            navbar.classList.add("navbar-blue");
-        } else {
-            if (scrollPosition > triggerHeight) {
-                navbar.classList.remove("navbar-light");
-                navbar.classList.add("navbar-blue");
-                topHeader.classList.add("top-header-black");
-            } else {
-                navbar.classList.add("navbar-light");
-                navbar.classList.remove("navbar-blue");
-                topHeader.classList.remove("top-header-black");
-            }
-        }
-    }
-
-    window.addEventListener("scroll", updateNavbar);
-    window.addEventListener("resize", updateNavbar); // Para actualizar en cambio de tamaño
-    updateNavbar(); // Llama a la función al cargar la página
-</script>
-<!-- jQuery library -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+         </footer>
+      </section>
+      <!-- Bootstrap JS and dependencies -->
+      <script src="./scripts.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+         crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+         crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
 </html>

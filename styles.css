@@ -1,211 +1,32 @@
-/* General styles */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #ffc107;
+    --dark-color: #1a202c;
+    --light-color: #fff;
+    --gray-color: #e2e8f0;
+    --hover-color: #e0a800;
+    --btn-hover-bg: #0056b3;
+    --btn-hover-border: #004085;
+    --gold-color: #daa520;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --transition-fast: 0.3s ease-in-out;
+}
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 20px 0 0 0;
     padding: 0;
+    color: var(--dark-color);
+    text-align: left;
 }
-
 .hero {
     position: relative;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-}
-
-#hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover entire section */
-}
-
-.hero-content {
-    position: relative;
-    top: 50%; /* Vertically center */
-    transform: translateY(-50%); /* Adjust for correct centering */
-    color: white; /* Text color in hero */
-    text-align: center; /* Center text horizontally */
-}
-
-.fixed-top {
-    z-index: 1000; /* Ensure it's above the video */
-}
-
-.navbar {
-    transition: background-color 0.5s ease; /* Smooth transition for background color */
-}
-
-.nav-link {
-    color: white; /* Color inicial de los enlaces */
-    transition: color 0.3s; /* Transición suave para el cambio de color */
-}
-
-.nav-link:hover {
-    color: #FFD700; /* Cambia este color al que desees para el efecto hover */
-}
-
-.logo {
-    box-sizing: content-box;
-    height: 100px; /* Logo height */
-}
-
-.social {
-    box-sizing: content-box;
-    height: 20px; /* Adjust icon size */
-    margin: 0 15px; /* Spacing between icons */
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(149deg) brightness(103%) contrast(101%);
-}
-
-/* Ensure each section has the same height as hero */
-section {
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-}
-
-/* About Us Mobile View */
-@media (max-width: 768px) {
-    #about .col-lg-6 {
-        order: 2; /* Change order for mobile */
-        text-align: center; /* Center text */
-    }
-    #about img {
-        order: 1; /* Ensure image is above on mobile */
-        margin-bottom: 20px; /* Bottom margin for image */
-    }
-}
-
-/* Button Hover Effect */
-.btn-primary:hover {
-    background-color: #0056b3; /* Background color on hover */
-    border-color: #004085; /* Border color on hover */
-    transform: scale(1.05); /* Scale effect on hover */
-    transition: all 0.3s ease-in-out; /* Smooth transition */
-}
-
-/* Navbar mobile styles */
-@media (max-width: 768px) 
-{
-
-    #about {
-        height: auto !important;
-    }
-
-    .carousel-div {
-        width: 90% !important;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-        background-image: url('https://thumbs.dreamstime.com/b/construction-site-sunset-7507349.jpg');
-    }
-
-    #most-popular {
-        height: auto !important;
-    }
-
-    
-    .navbar-collapse {
-        text-align: center; /* Center text in nav on mobile */
-    }
-
-    .register-header {
-        display: none; /* Hide on mobile */
-    }
-
-    .hero-content {
-        margin-top: 100px;
-    }
-
-    .navbar-nav {
-        flex-direction: column; /* Stack nav items */
-    }
-
-    .navbar-nav .nav-item {
-        margin-bottom: 10px; /* Spacing between nav items */
-    }
-}
-
-.navbar-blue {
-    background-color: #007bff !important; /* Bootstrap blue */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.top-header-black {
-    background-color: #000000 !important; /* Black */
-    transition: background-color 0.5s ease;
-}
-
-.navbar-light .navbar-nav .nav-link  {
-    color: white;
-}
-
-.navbar-light {
-    background-color: transparent !important; /* Initial transparent background */
-}
-
-/* Gold bar under text */
-.gold-bar {
-    height: 5px;
-    width: 50%;
-    background-color: #ffc107; /* Gold color */
-    margin: 10px 0 0 5%;
-}
-
-.gold-bar-secondary {
-    height: 4px;
-    width: 60%;
-    background-color: #ffc107; /* Gold color */
-    margin: 5px 0 0 2%;
-}
-
-/* Gold button styles */
-.btn-gold {
-    background-color: #ffc107;
-    border-width: 2px;
-    border-color: #fff;
-    color: white;
-    border-radius: 25px;
-    padding: 10px 45px;
-}
-
-.btn-white {
-    background-color: #fff;
-    border-width: 2px;
-    border-color: #ffc107;
-    color: #ffc107;
-    border-radius: 25px;
-    padding: 10px 45px;
-}
-
-
-.btn-gold:hover {
-    background-color: #e0a800; /* Darker gold on hover */
-}
-
-/* Adjust form width on different screens */
-.card {
-    max-width: 100%;
-}
-
-/* Adjust textarea size */
-textarea.form-control {
-    resize: vertical; /* Allow vertical resize */
-}
-
-/* Hero section minimum height */
-.hero {
-    background-image: url('assets/imagenes/IMAGEN HERO.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background: url('assets/imagenes/IMAGEN HERO.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Importante para que el pseudo-elemento se posicione correctamente */
     z-index: 1;
 }
-
 .hero::before {
     content: '';
     position: absolute;
@@ -213,205 +34,255 @@ textarea.form-control {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 123, 255, 0.3); /* Azul con 30% de opacidad */
-    z-index: -1; /* Coloca el filtro detrás del contenido */
+    background-color: rgba(0, 123, 255, 0.3);
+    z-index: -1;
 }
-
-/* Content adjustments */
 .hero-content {
     max-width: 500px;
+    color: var(--light-color);
+    text-align: center;
 }
-
+.fixed-top {
+    z-index: 1000;
+}
+.navbar {
+    transition: background-color 0.5s ease;
+}
+.nav-link {
+    color: var(--light-color);
+    transition: color var(--transition-fast);
+}
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+.logo {
+    height: 100px;
+}
+.social {
+    height: 20px;
+    margin: 0 15px;
+    filter: brightness(0) saturate(100%) invert(100%) contrast(101%);
+}
+section {
+    justify-content: center;
+    align-items: center;
+}
+.btn-primary:hover {
+    background-color: var(--btn-hover-bg);
+    border-color: var(--btn-hover-border);
+    transform: scale(1.05);
+    transition: all var(--transition-fast);
+}
+@media (max-width: 768px) {
+    #about {
+        height: auto !important;
+   }
+    #about .col-lg-6 {
+        order: 2;
+        text-align: center;
+   }
+    #about img {
+        order: 1;
+        margin-bottom: 20px;
+   }
+    .carousel-div {
+        width: 90% !important;
+        margin: 30px auto;
+        background-image: url('https://thumbs.dreamstime.com/b/construction-site-sunset-7507349.jpg');
+   }
+    #most-popular {
+        height: auto !important;
+   }
+    .navbar-collapse {
+        text-align: center;
+   }
+    .register-header {
+        display: none;
+   }
+    .hero-content {
+        margin-top: 100px;
+   }
+    .navbar-nav {
+        flex-direction: column;
+   }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+   }
+}
+.navbar-blue {
+    background-color: var(--primary-color) !important;
+    transition: background-color var(--transition-fast);
+}
+.top-header-black {
+    background-color: #000 !important;
+    transition: background-color 0.5s ease;
+}
+.navbar-light {
+    background-color: transparent !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--light-color);
+}
+.gold-bar {
+    height: 5px;
+    width: 50%;
+    background-color: var(--secondary-color);
+    margin: 10px 0 0 5%;
+}
+.gold-bar-secondary {
+    height: 4px;
+    width: 60%;
+    background-color: var(--secondary-color);
+    margin: 5px 0 0 2%;
+}
+.btn-gold, .btn-white {
+    border-radius: 25px;
+    padding: 10px 45px;
+    transition: background-color var(--transition-fast);
+}
+.btn-gold {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--light-color);
+    color: var(--light-color);
+}
+.btn-white {
+    background-color: var(--light-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+.btn-gold:hover {
+    background-color: var(--hover-color);
+}
+.card {
+    max-width: 100%;
+    box-shadow: var(--box-shadow);
+}
+textarea.form-control {
+    resize: vertical;
+}
 .custom-form .card {
-    height: 500px; /* Taller */
-    width: 80%; /* Slightly less wide */
+    height: 500px;
+    width: 80%;
 }
-
 .card-header-hero {
-    background-color: #007bff; /* Blue background */
+    background-color: var(--primary-color);
 }
-
-.text-white {
-    color: white; /* White text */
-}
-
 #most-popular {
     height: 70vh;
 }
-
 .gold-separator {
-    border: 2px solid #daa520; /* Gold separator */
+    border: 2px solid var(--gold-color);
     height: 0;
     width: 100%;
 }
-
 .card-body {
-    background-color: white; /* White background for card body */
+    background-color: var(--light-color);
 }
-
 .custom-input {
-    background-color: #ccc; /* White for input fields */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 15px; /* Rounded corners */
-    overflow: none;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 15px;
 }
-
 .rectangular-card {
-    border-radius: 0.5rem; /* Rounded corners for rectangular look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around card */
-    height: auto;
-    display: flex;
-    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
 }
-
 .circle-indicator {
     display: inline-block;
-    width: 10px; /* Width for circle indicator */
-    height: 10px; /* Height for circle indicator */
-    background-color: #ffc107; /* Gold color for circle */
-    border-radius: 50%; /* Make it circular */
-    margin-right: 10px; /* Spacing to the right */
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin-right: 10px;
 }
-
 .background-image-section {
-    position: relative; /* Asegura que el ::before esté posicionado correctamente */
+    position: relative;
     padding: 40px 0;
-    overflow: hidden; /* Evita que el ::before salga del contenedor */
+    overflow: hidden;
 }
-
-.rounded-input {
-    border-radius: 20px 0 0 20px; /* Bordes redondeados a la izquierda */
-}
-.rounded-button {
-    border-radius: 20px; /* Bordes redondeados a la derecha */
-    background-color: #ffc107;
-}
-
 .background-image-section::before {
     content: "";
-    background: url("assets/imagenes/BACKGROUND BENEFITS.jpg");
-    background-size: cover;
+    background: url("assets/imagenes/BACKGROUND BENEFITS.jpg") center/cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    filter: brightness(0.3); /* Aplica el filtro solo al fondo */
-    z-index: -1; /* Envía el fondo detrás del contenido */
+    filter: brightness(0.3);
+    z-index: -1;
 }
-
-
 .content {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
-    justify-content: center; /* Centra los elementos en la dirección horizontal */
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
 .icon-container {
-    background-color: white; /* Fondo blanco para los íconos */
-    border-radius: 50%; /* Bordes redondeados */
-    padding: 30px; /* Espaciado interno */
-    margin-bottom: 10px; /* Espacio entre el ícono y el texto */
-    margin-top: 20px;
-    display: flex; /* Centrar la imagen */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    width: 140px; /* Ajusta el tamaño según necesites */
-    height: 140px; /* Ajusta el tamaño según necesites */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
-
+    background-color: var(--light-color);
+    border-radius: 50%;
+    padding: 30px;
+    margin: 20px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    box-shadow: var(--box-shadow);
 }
-
 .icon-container img {
-    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
-    max-height: 100%; /* Asegura que la imagen no se salga del contenedor */
+    max-width: 100%;
+    max-height: 100%;
 }
-
 h3 {
-    margin-top: 10px; /* Espacio entre el ícono y el texto */
+    margin-top: 10px;
 }
-
 .card-careers {
     position: relative;
     overflow: hidden;
     border: none;
     border-radius: 0.5rem;
-    flex-grow: 1; /* Asegura que las tarjetas ocupen todo el espacio disponible */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-}
-
-.card-careers {
     width: 100%;
-    height: 300px; /* Ajusta la altura de la imagen según sea necesario */
-    object-fit: cover; /* Mantiene la proporción */
-    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    height: 300px;
 }
-
 .card-body {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: var(--light-color);
     padding: 10px;
 }
-
 .card-body-hero {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
     padding: 20px;
-
 }
-
 #about {
     height: 70vh;
 }
-
-body{
-    margin-top:20px;
-    color: #1a202c;
-    text-align: left;  
-}
-.main-body {
-    padding: 15px;
-}
 .card2 {
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
-}
-
-.card2 {
+    box-shadow: var(--box-shadow);
     position: relative;
     display: flex;
     flex-direction: column;
     word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 0 solid rgba(0,0,0,.125);
+    background-color: var(--light-color);
     border-radius: .25rem;
     max-width: 400px;
     min-width: 190px;
 }
-
 #team {
-    background-color: #e2e8f0;    
+    background-color: var(--gray-color);
 }
-
 .card-body2 {
     flex: 1 1 auto;
-    min-height: 1px;
     padding: 1rem;
 }
-
 .gutters-sm {
     margin-right: -8px;
     margin-left: -8px;
 }
-
 .gutters-sm>.col, .gutters-sm>[class*=col-] {
     padding-right: 8px;
     padding-left: 8px;
@@ -419,9 +290,8 @@ body{
 .mb-3, .my-3 {
     margin-bottom: 1rem!important;
 }
-
 .bg-gray-300 {
-    background-color: #e2e8f0;
+    background-color: var(--gray-color);
 }
 .h-100 {
     height: 100%!important;
@@ -429,16 +299,16 @@ body{
 .shadow-none {
     box-shadow: none!important;
 }
-
 .carousel-div {
     width: 650px;
     height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    margin: 30px auto;
     background-image: url('https://thumbs.dreamstime.com/b/construction-site-sunset-7507349.jpg');
 }
-
 .text-danger {
-    color: #daa520 !important;
+    color: var(--gold-color) !important;
+}
+.rounded-button {
+    border-radius: 20px;
+    background-color: var(--secondary-color);
 }
