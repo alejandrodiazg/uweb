@@ -5,10 +5,10 @@ function updateNavbar() {
     var heroHeight = heroSection.offsetHeight;
     var scrollPosition = window.scrollY;
 
-    // Verifica si el viewport es menor que 768px
+
     var isMobile = window.innerWidth < 768;
 
-    // Calculamos el 70% de la altura del hero
+
     var triggerHeight = heroHeight * 0.10;
 
     if (isMobile) {
@@ -28,5 +28,5 @@ function updateNavbar() {
 }
 
 window.addEventListener("scroll", updateNavbar);
-window.addEventListener("resize", updateNavbar); // Para actualizar en cambio de tamaño
-updateNavbar(); // Llama a la función al cargar la página
+window.addEventListener("resize", updateNavbar);
+updateNavbar(); 
