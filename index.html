@@ -21,42 +21,46 @@
                 <a href="" class="text-white ml-1">email@company.com</a>
             </div>
             <div class="d-flex">
-                <img class="social ml-1" src="assets/imagenes/youtube.png" alt="Logo redes sociales"/>
-                <img class="social ml-1" src="assets/imagenes/instagram-logo.png" alt="Logo redes sociales"/>
-                <img class="social ml-1" src="assets/imagenes/facebook-app-symbol.png" alt="Logo redes sociales"/>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img class="social ml-1" src="assets/imagenes/youtube.png" alt="Logo redes sociales"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="social ml-1" src="assets/imagenes/instagram-logo.png" alt="Logo redes sociales"/>
+                </a>
+                
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="social ml-1" src="assets/imagenes/facebook-app-symbol.png" alt="Logo redes sociales"/>
+                </a>
+                
+               
             </div>
         </div>
     </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 mx-auto">
+        <div class="container-fluid col-lg-10">
             <a class="navbar-brand" href="#">
                 <img class="logo" src="assets/imagenes/LOGO.png" alt="Logo">
             </a>
-            <button class="btn btn-outline-light rounded-pill d-lg-none">Menu</button>
-
+            <button class="btn btn-outline-light rounded-pill d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+    
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#about">About Us</a>
+                        <a class="nav-link font-weight-bold" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#study-careers">Courses</a>
+                        <a class="nav-link font-weight-bold" href="#study-careers">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#team">Team</a>
+                        <a class="nav-link font-weight-bold" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#contact">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                 
+                        <a class="nav-link font-weight-bold" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
     
 </header>
 
@@ -67,11 +71,14 @@
             <!-- Columna de la izquierda: Texto y botón -->
             <div class="col-md-6">
                 <div class="hero-content">
-                    <h3 class="text-white text-left ml-4">Welcome at the university</h3>
+                    <h3 class="text-white text-left ml-4 mt-4">Welcome at the university</h3>
                     <div class="gold-bar"></div> <!-- Barra dorada -->
-                    <h1 class="text-white text-left ml-4">We are an online</h1>
-                    <h1 class="text-white text-left ml-4">platform to make learning</h1>
-                    <button class="btn btn-gold mt-2">Get Now</button>
+                    <h1 class="text-white text-left ml-4 font-weight-bold">We are an online</h1>
+                    <h1 class="text-white text-left ml-4 font-weight-bold">platform to make learning</h1>
+                    <div class="d-flex justify-content-start">
+                        <button class="btn btn-gold mt-2">Get Now</button>
+                      </div>
+                      
                 </div>
             </div>
             
@@ -125,7 +132,7 @@
 <!-- MOST POPULAR SECTION -->
 <section id="most-popular" class="py-5">
     <div class="container">
-        <div class="col-md-6 mt-4">
+        <div class="col-md-6 mt-4 py-5">
             <div class="hero-content">
                 <div class="d-flex align-items-center">
                     <span class="circle-indicator"></span>
@@ -149,7 +156,7 @@
                     <img src="assets\imagenes\IMAGE CURSO 1.jpg" class="card-img-top w-100" alt="Team Member 1">
                     <div class="gold-separator"></div>
                     <div class="card-body text-center bg-white rounded">
-                        <h5 class="text-primary">Contrary to popular belief, Lorem Ipsum is not simply</h5>
+                        <p class="text-primary">Contrary to popular belief, Lorem Ipsum is not simply</p>
                         <button class="btn btn-gold mt-3">Read More</button>
                     </div>
                 </div>
@@ -161,7 +168,7 @@
                     <img src="assets\imagenes\IMAGE CURSO 2.jpg" class="card-img-top w-100" alt="Team Member 2">
                     <div class="gold-separator"></div>
                     <div class="card-body text-center bg-white rounded">
-                        <h5 class="text-primary">Lorem Ipsum is simply dummy text of the printing</h5>
+                        <p class="text-primary">Lorem Ipsum is simply dummy text of the printing</p>
                         <button class="btn btn-gold mt-3">Read More</button>
                     </div>
                 </div>
@@ -173,7 +180,7 @@
                     <img src="assets\imagenes\IMAGE CURSO 3.jpg" class="card-img-top w-100" alt="Team Member 3">
                     <div class="gold-separator"></div>
                     <div class="card-body text-center bg-white rounded">
-                        <h5 class="text-primary">Contrary to popular belief, Lorem Ipsum is not simply</h5>
+                        <p class="text-primary">Contrary to popular belief, Lorem Ipsum is not simply</p>
                         <button class="btn btn-gold mt-3">Read More</button>
                     </div>
                 </div>
@@ -193,7 +200,7 @@
         </div>
     </div>
     <div class="col text-center mt-4">
-        <button class="btn btn-gold">View More</button>
+        <button class="btn btn-white">View More</button>
     </div>
 
     
@@ -204,7 +211,7 @@
     <div class="container mt-5">
         <div class="row align-items-center">
             <!-- Columna izquierda: Texto -->
-            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+            <div class="col-lg-6 col-md-12 mb-lg-0 mb-n3">
                 <div>
                     <div class="d-flex align-items-center">
                         <span class="circle-indicator"></span>
@@ -221,15 +228,16 @@
             </div>
 
             <!-- Columna derecha: Imagen -->
-            <div class="col-lg-6 col-md-12 text-center">
-                <img class="img-fluid rounded" src="assets/imagenes/IMAGE ABOUT US.jpg" alt="About Us">
+            <div class="col-lg-6 col-md-12 text-center rounded-pill">
+                <img class="img-fluid mt-4 py-4 rounded-pill" src="assets/imagenes/IMAGE ABOUT US.jpg" alt="About Us">
             </div>
         </div>
         
         <!-- Botón al final en dispositivos móviles -->
-        <div class="text-center mt-4 "> <!-- Mostrar solo en móviles -->
+        <div class="d-flex justify-content-sm-start justify-content-center mt-n3">
             <button class="btn btn-gold">View More</button>
-        </div>
+          </div>
+          
     </div>
 </section>
 
@@ -301,80 +309,81 @@
         </div>
     </div>
 
- <div class="container mt-5">
-    <div class="row">
-        <!-- Columna izquierda -->
-        <div class="col-lg-6">
-            <div class="row">
-                <!-- Primer fila con dos tarjetas -->
-                <div class="col-md-6">
-                    <div class="card-careers">
-                        <img src="assets/imagenes/IMAGE  CATEGORY ADMINISTRATION.jpg" class="card-img-top" alt="Imagen de fondo">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Administration</h5>
-                            <a href="#" class="btn btn-primary">Leer más</a>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Columna izquierda -->
+            <div class="col-lg-6">
+                <div class="row">
+                    <!-- Primer fila con dos tarjetas -->
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card-careers">
+                            <img src="assets/imagenes/IMAGE  CATEGORY ADMINISTRATION.jpg" class="card-img-top" alt="Imagen de fondo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Administration</h5>
+                                <button class="btn btn-gold">View More</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card-careers">
+                            <img src="assets/imagenes/IMAGE  CATEGORY ACCOUNTING.jpg" class="card-img-top" alt="Imagen de fondo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Accounting</h5>
+                                <button class="btn btn-gold">View More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card-careers">
-                        <img src="assets/imagenes/IMAGE  CATEGORY ACCOUNTING.jpg" class="card-img-top" alt="Imagen de fondo">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Accounting</h5>
-                            <a href="#" class="btn btn-primary">Leer más</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Segunda fila con una tarjeta -->
-            <div class="row mt-5">
-                <div class="col-md-12">
-                    <div class="card-careers">
-                        <img src="assets/imagenes/IMAGE  CATEGORY ARCHITECTURE.jpg" class="card-img-top" alt="Imagen de fondo">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Architecture</h5>
-                            <a href="#" class="btn btn-primary">Leer más</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Columna derecha -->
-        <div class="col-lg-6">
-            <div class="row">
-                <!-- Primer tarjeta de la columna derecha -->
-                <div class="col-md-12">
-                    <div class="card-careers">
-                        <img src="assets/imagenes/IMAGE  CATEGORY MATHEMATICS.jpg" class="card-img-top" alt="Imagen de fondo">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Mathematics</h5>
-                            <a href="#" class="btn btn-primary">Leer más</a>
+    
+                <!-- Segunda fila con una tarjeta -->
+                <div class="row mt-3">
+                    <div class="col-12 mb-3">
+                        <div class="card-careers">
+                            <img src="assets/imagenes/IMAGE  CATEGORY ARCHITECTURE.jpg" class="card-img-top" alt="Imagen de fondo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Architecture</h5>
+                                <button class="btn btn-gold">View More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row mt-5">
-                <!-- Segunda tarjeta de la columna derecha -->
-                <div class="col-md-12">
-                    <div class="card-careers">
-                        <img src="assets/imagenes/IMAGE  CATEGORY PROGRAMMING.jpg" class="card-img-top" alt="Imagen de fondo">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Programming</h5>
-                            <a href="#" class="btn btn-primary">Leer más</a>
+    
+            <!-- Columna derecha -->
+            <div class="col-lg-6">
+                <div class="row">
+                    <!-- Primer tarjeta de la columna derecha -->
+                    <div class="col-12 mb-3">
+                        <div class="card-careers">
+                            <img src="assets/imagenes/IMAGE  CATEGORY MATHEMATICS.jpg" class="card-img-top" alt="Imagen de fondo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Mathematics</h5>
+                                <button class="btn btn-gold">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-3">
+                    <!-- Segunda tarjeta de la columna derecha -->
+                    <div class="col-12 mb-3">
+                        <div class="card-careers">
+                            <img src="assets/imagenes/IMAGE  CATEGORY PROGRAMMING.jpg" class="card-img-top" alt="Imagen de fondo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Programming</h5>
+                                <button class="btn btn-gold">View More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    
 
 <div class="text-center mt-4 "> <!-- Mostrar solo en móviles -->
-    <button class="btn btn-gold">View More</button>
+    <button class="btn btn-white">View More</button>
 </div>
 
 </div>
@@ -492,7 +501,7 @@
         <div class="row w-100">
             <!-- Columna del texto -->
             <div class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-0">
-                <p class="text-left text-white font-weight-bold">LOREM IPSUM DOLOR SIT AME.</p>
+                <h3 class="text-left text-white font-weight-bold">LOREM IPSUM DOLOR SIT AME.</h3>
             </div>
             <!-- Columna del carrusel -->
             <div class="col-12 col-md-8 px-0 px-md-5">
@@ -529,20 +538,69 @@
 
 
 <!-- FOOTER -->
- <section class="bg-primary">
+ <section id="contact" class="bg-primary p-5">
 <footer class="py-4">
-
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-sm-3 "><img class="logo" src="assets\imagenes\LOGO.png" alt=""></div>
-            <div class="col-sm-3"><h3>Quick Links</h3></div>
-            <div class="col-sm-3"><h3>Contact Info</h3></div>
-            <div class="col-sm-3"><h3>Newsletter</h3></div>
+            <!-- Logo -->
+            <div class="col-12 col-md-3 mt-3 text-center text-md-left">
+                <img class="logo img-fluid" src="assets/imagenes/LOGO.png" alt="">
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="col-12 col-md-3 mt-3">
+                <h5 class="font-weight-bold text-danger">Quick Links</h5>
+                <div class="mb-2"><a href="" class="text-white">About Us</a></div>
+                <div class="mb-2"><a href="" class="text-white">Courses</a></div>
+                <div class="mb-2"><a href="" class="text-white">Team</a></div>
+                <div class="mb-2"><a href="" class="text-white">Contact Us</a></div>
+            </div>
+    
+            <!-- Contact Info -->
+            <div class="col-12 col-md-3 mt-3">
+                <h5 class="font-weight-bold text-danger">Contact Info</h5>
+                <div class="mb-2 d-flex align-items-center">
+                    <img class="social" src="assets/imagenes/phone-call.png" alt="Phone Icon">
+                    <a href="tel:+123456789" class="text-white ml-2">123456789</a>
+                </div>
+                <div class="mb-2 d-flex align-items-center">
+                    <img class="social" src="assets/imagenes/mail.png" alt="Mail Icon">
+                    <a href="mailto:mail@enterprise.com" class="text-white ml-2">mail@enterprise.com</a>
+                </div>
+                <div class="mb-2 d-flex align-items-center">
+                    <img class="social" src="assets/imagenes/location.png" alt="Location Icon">
+                    <span class="text-white ml-2">24th Street</span>
+                </div>
+                <div class="mb-2 d-flex justify-content-center justify-content-md-start ml-lg-2">
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img class="social ml-2" src="assets/imagenes/youtube.png" alt="YouTube Logo"/>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img class="social ml-2" src="assets/imagenes/instagram-logo.png" alt="Instagram Logo"/>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img class="social ml-2" src="assets/imagenes/facebook-app-symbol.png" alt="Facebook Logo"/>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Newsletter -->
+            <div class="col-12 col-md-3 mt-3">
+                <h5 class="font-weight-bold text-danger">Newsletter</h5>
+                <p class="text-white">Receive all our promotions</p>
+                <div class="input-group">
+                    <input type="email" class="form-control rounded-input" placeholder="" aria-label="Correo">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary rounded-button" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
 
-    <div class="container text-center">
-        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    <div class="container text-center mt-5">
+        <p class="text-white font-weight-bold">&copy; Created by Alejandro Diaz. 2024</p>
     </div>
 </footer>
 </section>
@@ -560,7 +618,7 @@
         var isMobile = window.innerWidth < 768;
 
         // Calculamos el 70% de la altura del hero
-        var triggerHeight = heroHeight * 0.5;
+        var triggerHeight = heroHeight * 0.10;
 
         if (isMobile) {
             navbar.classList.remove("navbar-light");
@@ -586,5 +644,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
